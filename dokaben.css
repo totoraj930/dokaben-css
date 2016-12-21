@@ -1,0 +1,95 @@
+.dokaben {
+	transform-origin: bottom center;
+	display: inline-block;
+}
+.dkbn-steps {
+	animation-timing-function: steps(18);
+}
+.dkbn-loop.dkbn-steps,
+.dkbn-loop2.dkbn-steps {
+	animation-timing-function: steps(36);
+}
+.dkbn-down-no {
+	transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+}
+.dkbn-up,
+.dkbn-hover:hover > .dkbn-up,
+.dkbn-hover:focus > .dkbn-up {
+	animation-name: dokaben-up;
+	animation-duration: 1500ms;
+}
+.dkbn-down,
+.dkbn-hover:hover > .dkbn-down,
+.dkbn-hover:focus > .dkbn-down {
+	animation-name: dokaben-down;
+	animation-duration: 1500ms;
+}
+.dkbn-loop,
+.dkbn-hover:hover > .dkbn-loop,
+.dkbn-hover:focus > .dkbn-loop {
+	animation-name: dokaben-loop;
+	animation-duration: 3000ms;
+	animation-iteration-count: infinite;
+}
+.dkbn-loop2,
+.dkbn-hover:hover > .dkbn-loop2,
+.dkbn-hover:focus > .dkbn-loop2 {
+	animation-name: dokaben-loop2;
+	animation-duration: 3000ms;
+	animation-iteration-count: infinite;
+}
+.dkbn-hover > .dokaben {
+	animation: none;
+}
+.dkbn-text {
+	color: #d33c21;
+	font-weight: bold;
+	text-shadow:
+		0 1px 0 #550b0b,
+		0 -1px 0 #550b0b,
+		1px 0 0 #550b0b,
+		-1px 0 0 #550b0b,
+		1px 1px 0 #550b0b,
+		-1px -1px 0 #550b0b;
+	font-family: "dokaben_ver2_1", "Helvetica Neue", "メイリオ", Meiryo, Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: bold;
+}
+
+@keyframes dokaben-up {
+	0% {
+		transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+	}
+	100% {
+		transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+	}
+}
+@keyframes dokaben-down {
+	0% {
+		transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+	}
+	100% {
+		transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+	}
+}
+@keyframes dokaben-loop {
+	0% {
+		transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+	}
+	50% {
+		transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+	}
+	100% {
+		transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+	}
+}
+@keyframes dokaben-loop2 {
+	0% {
+		transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+	}
+	50% {
+		transform: matrix3d(1,0,0.00,0,0.00,0,1.00,-0.005,0,-1,0,0,0,0,0,1);
+	}
+	100% {
+		transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+	}
+}

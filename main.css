@@ -1,0 +1,149 @@
+/* note 初期化処理 */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	color: #2f3236;
+	font-size: 16px;
+	font-family: "Helvetica Neue", "メイリオ", Meiryo, Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1;
+}
+iframe {
+	max-width: 100%;
+}
+img {
+	border: none;
+}
+a {
+	color: #1697be;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #48d4ff;
+	text-decoration: underline;
+}
+.dummy {
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.head {
+	padding: 1em;
+	text-align: center;
+}
+.title {
+	font-size: 10vw;
+	font-weight: bold;
+}
+.title img {
+	width: 650px;
+	max-width: 100%;
+}
+.description {
+	margin: 1em;
+	font-size: 1em;
+	line-height: 1.5;
+}
+.head-link-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.head-link-list li {
+	margin: 0 1em;
+}
+.head-link-list a {
+	position: relative;
+	display: block;
+	padding: 5px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+.head-link-list a:hover:before,
+.head-link-list a:focus:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	bottom: 0;
+	left: 0;
+	background-color: #fcb976;
+}
+.head-link-list a:hover > .dokaben,
+.head-link-list a:focus > .dokaben {
+	animation-duration: 1000ms;
+	animation-timing-function: steps(6);
+}
+
+.center-inner {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+.content {
+	margin: 3em 0 5em 0;
+	padding: .5em;
+}
+.content * {
+	line-height: 1.5;
+}
+.content h2 {
+	margin-bottom: .5em;
+	border-bottom: 1px solid #eee;
+	font-size: 2em;
+	text-align: center;
+}
+.content h3 {
+	margin-top: 2.4em;
+	margin-bottom: .2em;
+	font-size: 1.5em;
+}
+.content code {
+	background: #fcb976;
+	color: #4e2903;
+	font-weight: bold;
+}
+.content pre code {
+	margin: .5em 0;
+	background: #f5f5f5;
+	color: #000;
+	box-shadow: inset 1px 1px 4px #bbb;
+	font-size: .95em;
+	font-weight: normal;
+}
+.content table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+}
+.content table th {
+	padding: .5em;
+	background: #2f3236;
+	color: #fff;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+.content table td {
+	padding: .5em;
+	border: 1px solid #ccc;
+}
+

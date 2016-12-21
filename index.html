@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ドカベンCSS</title>
+	<link rel="stylesheet" href="./dokaben.css?a=1">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<header class="head">
+		<h1 class="title"><img src="./logo.png" alt="ドカベンCSS" class="dokaben dkbn-up dkbn-steps"></h1>
+		<p class="description">ドカベンのタイトル風なアニメーションをさせるCSS</p>
+		<ul class="head-link-list">
+			<li><a href="https://github.com/totoraj930/dokaben-css/archive/master.zip" class="dl-button dkbn-hover">
+				<span class="dokaben dkbn-steps dkbn-text dkbn-loop2">ダウンロード</span>
+			</a></li>
+			<li><a href="http://github.com/totoraj930/dokaben-css" class="dl-button dkbn-hover">
+				<span class="dokaben dkbn-steps dkbn-text dkbn-loop2">GitHub</span>
+			</a></li>
+		</ul>
+	</header>
+
+	<div class="center">
+		<div class="center-inner">
+			<section class="content">
+				<h2>使い方</h2>
+				<p>ダウンロードしたCSSを読み込みます。</p>
+				<pre class="html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./dokaben.css&quot;&gt;</code></pre>
+				<p>あとはアニメーションさせたい要素にclassを追加するだけです！</p>
+			</section>
+
+			<section class="content">
+				<h2>サンプル</h2>
+				<h3>基本</h3>
+				<p class="dokaben dkbn-loop">これはテストです</p>
+				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop&quot;&gt;これはテストです&lt;/p&gt;</code></pre>
+
+				<h3>一部だけ</h3>
+				<p>文章の中の<span class="dokaben dkbn-loop">ここだけ</span>がアニメーションされます。</p>
+				<pre class="html"><code>&lt;p&gt;文章の中の&lt;span class=&quot;dokaben dkbn-loop&quot;&gt;ここだけ&lt;/span&gt;がアニメーションされます。&lt;/p&gt;</code></pre>
+
+				<h3>コマ落とし？</h3>
+				<p>
+					<span class="dokaben dkbn-loop dkbn-steps dkbn-text">コマオトシ アリ</span>
+					と
+					<span class="dokaben dkbn-loop dkbn-text">コマオトシ　ナシ</span>
+				</p>
+				<pre class="html"><code>&lt;p&gt;
+	&lt;span class=&quot;dokaben dkbn-loop dkbn-steps dkbn-text&quot;&gt;コマオトシ アリ&lt;/span&gt;
+	と
+	&lt;span class=&quot;dokaben dkbn-loop dkbn-text&quot;&gt;コマオトシ　ナシ&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+
+				<h3>ホバーしたとき</h3>
+				<p><a href="#" class="dkbn-hover"><span class="dokaben dkbn-loop2">ここにマウスがのると動くよ</span></a></p>
+				<pre class="html"><code>&lt;a href=&quot;#&quot; class=&quot;dkbn-hover&quot;&gt;&lt;span class=&quot;dokaben dkbn-loop2&quot;&gt;ここにマウスがのると動くよ&lt;/span&gt;&lt;/a&gt;</code></pre>
+
+				<h3>ドカベンっぽい文字</h3>
+				<p class="dkbn-text" style="font-size: 2em;">ドカベン</p>
+				<pre class="html"><code>&lt;p class=&quot;dkbn-text&quot; style=&quot;font-size: 2em;&quot;&gt;ドカベン&lt;/p&gt;</code></pre>
+			</section>
+
+
+			<section class="content">
+				<h2>高度な使い方</h2>
+				<h3>速度を変える</h3>
+				<p class="dokaben dkbn-loop dkbn-text" style="animation-duration: 1000ms; font-size: 2em;">ハヤイ ヤツ</p>
+				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop dkbn-text&quot; style=&quot;animation-duration: 1000ms; font-size: 2em;&quot;&gt;ハヤイ ヤツ&lt;/p&gt;</code></pre>
+
+				<h3>コマ落としを調整する</h3>
+				<p class="dokaben dkbn-loop dkbn-text" style="animation-timing-function: steps(10); font-size: 2em;">カクカク</p>
+				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop dkbn-text&quot; style=&quot;animation-timing-function: steps(10); font-size: 2em;&quot;&gt;カクカク&lt;/p&gt;</code></pre>
+			</section>
+
+
+			<section class="content">
+				<h2>各classの説明</h2>
+				<table>
+					<tbody>
+						<tr><th>class</th><th>説明</th></tr>
+						<tr>
+							<td><code>.dokaben</code></td>
+							<td>アニメーションさせたい要素につける</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-up</code></td>
+							<td>起き上がるアニメーション</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-down</code></td>
+							<td>倒れるアニメーション</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-loop</code></td>
+							<td>up → down → up...の繰り返し</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-loop2</code></td>
+							<td>down → up → down...の繰り返し</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-down-no</code></td>
+							<td>倒れた状態にする</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-steps</code></td>
+							<td>アニメーションがコマ落ち(18コマ/1アニメーション)になる</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-hover</code></td>
+							<td>これを付けた要素がホバーされたときに子要素の<code>.dokaben</code>がアニメーションを開始する</td>
+						</tr>
+						<tr>
+							<td><code>.dkbn-text</code></td>
+							<td>ドカベンっぽい文字にする</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class="content">
+				<h2>注意</h2>
+				<p>
+					<code>.dokaben</code>を指定した要素は<code>display: inline-block</code>になります。
+					デザインが崩れる原因となりますので入れ子にするなどして対処してください。
+				</p>
+			</section>
+
+			<section class="content">
+				<h2>その他</h2>
+				<p>
+					何か問題がございましたら作者Twitterまでご連絡をお願いします。
+				</p>
+				<p>
+					Twitter: <a href="https://twitter.com/totoraj930">@totoraj930</a>
+				</p>
+			</section>
+		</div>
+	</div>
+<!--	<img src="brs.png" alt="" class="dokaben dkbn-down-no dkbn-steps">-->
+
+</body>
+</html>
