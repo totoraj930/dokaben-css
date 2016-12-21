@@ -51,8 +51,6 @@
 		-1px 0 0 #550b0b,
 		1px 1px 0 #550b0b,
 		-1px -1px 0 #550b0b;
-	font-family: "dokaben_ver2_1", "Helvetica Neue", "メイリオ", Meiryo, Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-weight: bold;
 }
 
 @keyframes dokaben-up {
