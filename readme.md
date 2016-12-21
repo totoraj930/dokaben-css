@@ -65,17 +65,17 @@
 
 ### 各classの説明
 
-class|説明
--|-
-`.dokaben`|アニメーションさせたい要素につける
-`.dkbn-up`|起き上がるアニメーション
-`.dkbn-down`|倒れるアニメーション
-`.dkbn-loop`|up → down → up...の繰り返し
-`.dkbn-loop2`|down → up → down...の繰り返し
-`.dkbn-down-no`|倒れた状態にする
-`.dkbn-steps`|アニメーションがコマ落ち(18コマ/1アニメーション)になる
-`.dkbn-hover`|これを付けた要素がホバーされたときに子要素の`.dokaben`がアニメーションを開始する
-`.dkbn-text`|ドカベンっぽい文字にする
+|class|説明|
+|-|-|
+|`.dokaben`|アニメーションさせたい要素につける|
+|`.dkbn-up`|起き上がるアニメーション|
+|`.dkbn-down`|倒れるアニメーション|
+|`.dkbn-loop`|up → down → up...の繰り返し|
+|`.dkbn-loop2`|down → up → down...の繰り返し|
+|`.dkbn-down-no`|倒れた状態にする|
+|`.dkbn-steps`|アニメーションがコマ落ち(18コマ/1アニメーション)になる|
+|`.dkbn-hover`|これを付けた要素がホバーされたときに子要素の`.dokaben`がアニメーションを開始する|
+|`.dkbn-text`|ドカベンっぽい文字にする|
 
 
 ### 注意
