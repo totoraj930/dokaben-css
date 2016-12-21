@@ -36,7 +36,9 @@
 			<section class="content">
 				<h2>サンプル</h2>
 				<h3>基本</h3>
-				<p class="dokaben dkbn-loop">これはテストです</p>
+				<div>
+					<p class="dokaben dkbn-loop">これはテストです</p>
+				</div>
 				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop&quot;&gt;これはテストです&lt;/p&gt;</code></pre>
 
 				<h3>一部だけ</h3>
@@ -44,11 +46,13 @@
 				<pre class="html"><code>&lt;p&gt;文章の中の&lt;span class=&quot;dokaben dkbn-loop&quot;&gt;ここだけ&lt;/span&gt;がアニメーションされます。&lt;/p&gt;</code></pre>
 
 				<h3>コマ落とし？</h3>
-				<p>
-					<span class="dokaben dkbn-loop dkbn-steps dkbn-text">コマオトシ アリ</span>
-					と
-					<span class="dokaben dkbn-loop dkbn-text">コマオトシ　ナシ</span>
-				</p>
+				<div>
+					<p>
+						<span class="dokaben dkbn-loop dkbn-steps dkbn-text">コマオトシ アリ</span>
+						と
+						<span class="dokaben dkbn-loop dkbn-text">コマオトシ　ナシ</span>
+					</p>
+				</div>
 				<pre class="html"><code>&lt;p&gt;
 	&lt;span class=&quot;dokaben dkbn-loop dkbn-steps dkbn-text&quot;&gt;コマオトシ アリ&lt;/span&gt;
 	と
@@ -56,7 +60,9 @@
 &lt;/p&gt;</code></pre>
 
 				<h3>ホバーしたとき</h3>
-				<p><a href="#" class="dkbn-hover"><span class="dokaben dkbn-loop2">ここにマウスがのると動くよ</span></a></p>
+				<div>
+					<p><a href="#" class="dkbn-hover"><span class="dokaben dkbn-loop2">ここにマウスがのると動くよ</span></a></p>
+				</div>
 				<pre class="html"><code>&lt;a href=&quot;#&quot; class=&quot;dkbn-hover&quot;&gt;&lt;span class=&quot;dokaben dkbn-loop2&quot;&gt;ここにマウスがのると動くよ&lt;/span&gt;&lt;/a&gt;</code></pre>
 
 				<h3>ドカベンっぽい文字</h3>
@@ -68,11 +74,15 @@
 			<section class="content">
 				<h2>高度な使い方</h2>
 				<h3>速度を変える</h3>
-				<p class="dokaben dkbn-loop dkbn-text" style="animation-duration: 1000ms; font-size: 2em;">ハヤイ ヤツ</p>
+				<div>
+					<p class="dokaben dkbn-loop dkbn-text" style="animation-duration: 1000ms; font-size: 2em;">ハヤイ ヤツ</p>
+				</div>
 				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop dkbn-text&quot; style=&quot;animation-duration: 1000ms; font-size: 2em;&quot;&gt;ハヤイ ヤツ&lt;/p&gt;</code></pre>
 
 				<h3>コマ落としを調整する</h3>
-				<p class="dokaben dkbn-loop dkbn-text" style="animation-timing-function: steps(10); font-size: 2em;">カクカク</p>
+				<div>
+					<p class="dokaben dkbn-loop dkbn-text" style="animation-timing-function: steps(10); font-size: 2em;">カクカク</p>
+				</div>
 				<pre class="html"><code>&lt;p class=&quot;dokaben dkbn-loop dkbn-text&quot; style=&quot;animation-timing-function: steps(10); font-size: 2em;&quot;&gt;カクカク&lt;/p&gt;</code></pre>
 			</section>
 
@@ -133,6 +143,9 @@
 			<section class="content">
 				<h2>その他</h2>
 				<p>
+					タイトル画像で<a href="http://www.nicovideo.jp/watch/sm29720917">sm29720917</a>のフォントを使わせていただいています。
+				</p>
+				<p>
 					何か問題がございましたら作者Twitterまでご連絡をお願いします。
 				</p>
 				<p>
@@ -141,7 +154,12 @@
 			</section>
 		</div>
 	</div>
-<!--	<img src="brs.png" alt="" class="dokaben dkbn-down-no dkbn-steps">-->
+
+	<footer class="foot">
+		<div class="foot-inner">
+			<p class="copyright">&copy; 2016 totoraj. This work is released under the MIT License.</p>
+		</div>
+	</footer>
 
 </body>
 </html>

@@ -94,6 +94,17 @@ a:focus {
 	animation-timing-function: steps(6);
 }
 
+.foot-inner {
+	max-width: 1040px;
+	margin: 0 auto;
+	padding: .5em;
+}
+.copyright {
+	font-size: .95em;
+	text-align: center;
+	line-height: 1.5;
+}
+
 .center-inner {
 	max-width: 1040px;
 	margin: 0 auto;
@@ -115,6 +126,9 @@ a:focus {
 	margin-top: 2.4em;
 	margin-bottom: .2em;
 	font-size: 1.5em;
+}
+.content > p {
+	margin-bottom: 1em;
 }
 .content code {
 	background: #fcb976;
